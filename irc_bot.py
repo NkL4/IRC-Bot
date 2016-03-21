@@ -64,6 +64,8 @@ class Bot(ircbot.SingleServerIRCBot):
 
 	if "!cafe" in message:
 	        serv.privmsg("#"+chan, 'Hop, c[_] pour ' + auteur)
+	if "!mate" in message:
+		serv.privmsg('#'+chan, 'Et un club mate pour ' + auteur '. Un mate et ça repart')
 
 if __name__ == "__main__":
     Bot().start()

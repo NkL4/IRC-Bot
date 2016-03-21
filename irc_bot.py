@@ -47,7 +47,7 @@ class Bot(ircbot.SingleServerIRCBot):
 
 	        if len(message[6:]) > 140:
 	            serv.privmsg("#"+chan, 'Too many characters :/')
-			else:
+		else:
 	 		    try:
 				    twitter.update_status(status=message[6:])
 				    serv.privmsg("#"+chan, 'Twitter update successfull !')
@@ -59,8 +59,11 @@ class Bot(ircbot.SingleServerIRCBot):
 		    serv.privmsg("#"+chan, 'User not authorized !')
 
 	if "!help" in message:
-		serv.privmsg("#"+chan,' HELP : !meteo <City or DNS> | !twtr <msg> #for auth users')
+		serv.privmsg("#"+chan,' HELP : !cafe | !meteo <City or DNS> | !twtr <msg> #for auth users')
 
+
+	if "!cafe" in message:
+	        serv.privmsg("#"+chan, 'Hop, c[_] pour ' + auteur)
 
 if __name__ == "__main__":
     Bot().start()

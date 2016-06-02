@@ -4,7 +4,7 @@ IRCBot
 
 Just a fun bot for IRC channel !
 
-Required :
+## Required :
 
 Twithon library 
     https://github.com/ryanmcgrath/twython
@@ -12,7 +12,7 @@ Twithon library
 IRClib library
     https://sourceforge.net/projects/python-irclib/files/
     
-Commands :
+## Commands :
 
 !help
     <output>HELP : !meteo <City or ZIP> | !twtr <msg> #for auth users
